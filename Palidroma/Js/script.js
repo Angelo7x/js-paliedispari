@@ -9,22 +9,19 @@ function palindroma(parolaUtente) {
 
     inverse += parolaUtente[i];
 
-    if ( parolaUtente == parolaInversa) {
-        return true;
-    } else {
-        return false;
-    }
-
-    }
+    return inverse;
+}
 }
 
+
 var parolaInversa = palindroma(parolaUtente) ;
+
 console.log(parolaInversa);
 
-if ( parolaInversa == true ) {
+if ( parolaInversa == parolaUtente ) {
     alert("La tua parola è palindroma");
 } else {
-    alert("La tua parola non è palindroma");
+    alert("La tua parola è palindroma");
 }
 
 
