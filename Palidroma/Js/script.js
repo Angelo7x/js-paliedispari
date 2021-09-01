@@ -8,9 +8,8 @@ function palindroma(parolaUtente) {
     for ( var i = parolaUtente.length -1; i >= 0; i--) {
 
     inverse += parolaUtente[i];
-
-    return inverse;
 }
+    return inverse;
 }
 
 
@@ -21,7 +20,7 @@ console.log(parolaInversa);
 if ( parolaInversa == parolaUtente ) {
     alert("La tua parola è palindroma");
 } else {
-    alert("La tua parola è palindroma");
+    alert("La tua parola non è palindroma");
 }
 
 
