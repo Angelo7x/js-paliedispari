@@ -5,11 +5,15 @@ function palindroma(parolaUtente) {
 
     var inverse = "";
 
-    for ( var i = parolaUtente.length; i <= 0; i--) {
+    for ( var i = parolaUtente.length -1; i >= 0; i--) {
 
     inverse += parolaUtente[i];
 
-    return inverse;
+    if ( parolaUtente == parolaInversa) {
+        return true;
+    } else {
+        return false;
+    }
 
     }
 }
@@ -17,7 +21,7 @@ function palindroma(parolaUtente) {
 var parolaInversa = palindroma(parolaUtente) ;
 console.log(parolaInversa);
 
-if ( parolaUtente == parolaInversa) {
+if ( parolaInversa == true ) {
     alert("La tua parola è palindroma");
 } else {
     alert("La tua parola non è palindroma");
